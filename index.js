@@ -9,7 +9,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb')
 const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const cors = require('cors')
-app.use(cors())
+app.use(cors({ origin: "*" }))
 const Server = require("socket.io");
 require('dotenv').config()
 const formidable = require('formidable')
